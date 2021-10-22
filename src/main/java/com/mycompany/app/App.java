@@ -6,7 +6,7 @@ package com.mycompany.app;
 public class App
 {
 
-    private final String message = "Hello World!";
+    private final String message = "Hello Jenkins!";
 
     public App() {}
 
@@ -14,7 +14,7 @@ public class App
         System.out.println(new App().getMessage());
     }
 
-    private final String getMessage() {
+    private String getMessage() {
         return message;
     }
 
