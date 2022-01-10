@@ -1,12 +1,14 @@
 package com.mycompany.app;
 
+import lombok.extern.java.Log;
+
 /**
  * Hello world!
  */
-public class App
-{
+@Log
+public class App {
 
-    private final String message = "Hello Jenkins!";
+    private static final String message = "Hello Jenkins!";
 
     public App() {}
 
@@ -16,6 +18,10 @@ public class App
 
     private String getMessage() {
         return message;
+    }
+
+    private String getVersion() {
+        return "v1.0.0";
     }
 
 }
